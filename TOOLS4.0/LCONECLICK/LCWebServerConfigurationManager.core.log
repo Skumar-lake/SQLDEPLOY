@@ -1,0 +1,67 @@
+2024-10-04 14:20:44.5263 PublisherSettings INFO DisplayURL_TextChanged End http 
+2024-10-04 14:20:44.6906 frmClickOnceInstall INFO frmOneClickDeployInstall_Load Start 
+2024-10-04 14:20:44.7316 ProductMultipleInstance INFO InStartupPath & \LCProductMultipleInstance.xml:I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProductMultipleInstance.xml 
+2024-10-04 14:20:44.7523 ProductMultipleInstance ERROR System.IO.FileNotFoundException: Could not find file 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProductMultipleInstance.xml'.
+File name: 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProductMultipleInstance.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri)
+   at LCWebServerConfigurationManger.ProductMultipleInstance.Load(String InStartupPath) System.IO.FileNotFoundException: Could not find file 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProductMultipleInstance.xml'.
+File name: 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProductMultipleInstance.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri)
+   at LCWebServerConfigurationManger.ProductMultipleInstance.Load(String InStartupPath)    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri)
+   at LCWebServerConfigurationManger.ProductMultipleInstance.Load(String InStartupPath)
+2024-10-04 14:20:44.8487 PublisherSettings DEBUG Setter:Prefix: 
+2024-10-04 14:20:44.8791 PublisherSettings INFO DisplayURL_TextChanged End http 
+2024-10-04 14:20:44.8995 frmClickOnceInstall INFO frmOneClickDeployInstall_Load ProductInfos Path:I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProduct.XML 
+2024-10-04 14:20:44.9307 frmClickOnceInstall ERROR System.IO.FileNotFoundException: Could not find file 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProduct.XML'.
+File name: 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProduct.XML'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri)
+   at LCWebServerConfigurationManger.ProductInfos..ctor(String InFileName)
+   at LCWebServerConfigurationManager.frmClickOnceInstall.frmOneClickDeployInstall_Load(Object sender, EventArgs e) System.IO.FileNotFoundException: Could not find file 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProduct.XML'.
+File name: 'I:\SQLDEPLOY\TOOLS4.0\LCONECLICK\LCProduct.XML'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri)
+   at LCWebServerConfigurationManger.ProductInfos..ctor(String InFileName)
+   at LCWebServerConfigurationManager.frmClickOnceInstall.frmOneClickDeployInstall_Load(Object sender, EventArgs e)    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri)
+   at LCWebServerConfigurationManger.ProductInfos..ctor(String InFileName)
+   at LCWebServerConfigurationManager.frmClickOnceInstall.frmOneClickDeployInstall_Load(Object sender, EventArgs e)

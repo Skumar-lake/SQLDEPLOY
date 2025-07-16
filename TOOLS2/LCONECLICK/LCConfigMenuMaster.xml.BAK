@@ -1,0 +1,19 @@
+<?xml version="1.0" ?> 
+<LCConfigMenu>
+  <ITEM>
+    <DESCRIPTION>Click the button below to run the Configuration^VBCRLF^Manager to setup your database configurations.</DESCRIPTION>
+    <TEXT>^PRODUCT^ Configuration Manager</TEXT>
+    <COMMAND>
+      <TARGET>^APPPATH^\LCConfigurationManager.exe</TARGET>
+      <ARGUMENTS>^UTILITY.XML^</ARGUMENTS>
+    </COMMAND>
+  </ITEM>
+  <ITEM>
+    <DESCRIPTION>Click the button below to run the Web Server^VBCRLF^Configuration Manager to setup One Click clients.</DESCRIPTION>
+    <TEXT>^PRODUCT^ Web Server Configuration Manager</TEXT>
+    <COMMAND>
+      <TARGET>^APPPATH^\LCWebServerConfigurationManager.exe</TARGET>
+      <ARGUMENTS></ARGUMENTS>
+    </COMMAND>
+  </ITEM>
+</LCConfigMenu>

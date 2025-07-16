@@ -1,0 +1,127 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LCInstallNETShared
+</name>
+</assembly>
+<members>
+<member name="T:LCInstallNET.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LCInstallNET.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LCInstallNET.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:LCInstallNET.InstallProduct.DisableInstall(System.String)">
+ <summary>
+ Currently 
+ Either a check is required or we find a registry key or only the one level below the reg key
+ if a valueName is filled in then the value key must exist else it only needs to find a key
+ if a wild card is used in the key then a valueName is required
+ </summary>
+ <param name="InPath"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetLCProductProductName(System.String)">
+ <summary>
+ Returns the products name from the xml file specfied in the path name.
+ </summary>
+ <param name="InPath">the path to the xml file</param>
+ <returns>The product's name</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetLCProductVersionNumber(System.String)">
+ <summary>
+ Gets the Product Version number from the specified XML path
+ </summary>
+ <param name="InPath">The path to the xml file that contains the product info</param>
+ <returns>The version number</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetPreviousProductNames(System.String)">
+ <summary>
+ Gets a list of previous product names from the product's xml file
+ </summary>
+ <param name="InPath">The path to the product's xml file</param>
+ <returns>A list of previous product names</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.CheckExplicitDirectories(System.String)">
+ <summary>
+ Searches for an install directory using the products name in either the Infor or The Lake Companies directory
+ </summary>
+ <param name="strPreviousProductName">The product name</param>
+ <returns>The directory that the product is installed in</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetUninstallerDirectory(System.String)">
+ <summary>
+ Searches for the uninstaller Executable.
+ </summary>
+ <param name="selectedDirectory">The directory that we are search for the uninstaller for</param>
+ <returns>A directory info object if uninstaller is found, Nothing if not.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetOldInstallDirectoryInfo(System.String)">
+ <summary>
+ Tries to find a location of the previous install.  
+ Looks in the directory listed in the unistaller registry entry if the entry exsits,
+ the selected install path, 
+ the Infor directory,
+ and the Lake Companies directory for the uninstaller
+ </summary>
+ <param name="NewInstallPath">The user selected install path.</param>
+ <returns>The old directory install path if an uninstaller executable is found.  Nothing if the uninstaller is not found</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.SearchMultipleDirectoriesForUninstaller(System.String,System.String)">
+ <summary>
+ Looks for the product's uninstaller in new install path, the infor path, and the lake co path using the specified product name
+ </summary>
+ <param name="NewInstallPath">The path to the new intallation</param>
+ <param name="ProductNameDirectory">The directory for the product</param>
+ <returns>
+ The DirectroyInfo for the directory that has the uninstaller.
+ OTherwise, nothing
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetDirectorySize(System.IO.DirectoryInfo)">
+ <summary>
+ Gets the size of directory in bytes
+ </summary>
+ <param name="currentDirectory">The directory we will gather the file size from</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.ExecuteUninstaller(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+ <summary>
+ Grabs the old configuration files from the old install, 
+ executes LCUninstallWebServer.exe if it exists, 
+ saves the old configuration files to the new directory,
+ and then deletes the old product install directory if it is different from the new install directory.
+ </summary>
+ <param name="oPrevVersionDir">The location of the previous installation of the product</param>
+ <param name="newInstallDirectory">The location of the new installation of the product</param>
+ <remarks></remarks>
+</member>
+<member name="M:LCInstallNET.InstallProduct.GetProductInstallPathName">
+ <summary>
+ Returns the product's name without the '-' character
+ </summary>
+ <returns>The product's name without the '-' character</returns>
+ <remarks>Used for the install path</remarks>
+</member>
+</members>
+</doc>
